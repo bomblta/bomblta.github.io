@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- <link rel="stylesheet" href="sass/blocks/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Wallet</title>
+</head>
+
+<body>
+    <header name="header" class="header" id="header">
+        <div class="container container__header">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-2 col-md-2 col-6 header__logo"><a href="#header"><img src="icons/logo.png"
+                            class="d-lg-none" alt="logo"> <img src="icons/logo.svg" class="d-none d-lg-block"
+                            alt="logo"></a></div>
+                <div class="col-lg-1 offset-lg-1 col-md-1 offset-md-2 d-none d-lg-block"><span
+                        class="header__lang-lang-ru">En</span><span class="header__lang-lang-jp">中文</span></div>
+                <div class="col-lg-2 offset-lg-5 col-md-2 offset-md-4 d-none d-lg-block"><button
+                        class="header__button open-modal-1">GET YOUR WALLET</button></div>
+                <div class="col-6 d-flex justify-content-end d-lg-none">
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div class="menu">
+        <ul class="menu-list list-unstyled">
+            <li>
+                <a href="#header" class="anchor-link">About</a>
+            </li>
+            <li>
+                <a href="#connect" class="anchor-link">Video</a>
+            </li>
+            <li>
+                <a href="#views" class="anchor-link">Views of our product</a>
+            </li>
+            <li>
+                <a href="#get_started" class="anchor-link">Get started</a>
+            </li>
+            <li>
+                <a href="#config" class="anchor-link">Минимальные требования</a>
+            </li>
+            <li>
+                <a href="#licence" class="anchor-link">License</a>
+            </li>
+            <li>
+                <a href="#custom" class="anchor-link">Custom development</a>
+            </li>
+            <li>
+                <a href="open-modal-2"><button class="menu_get_button">GET YOUR WALLET</button></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="custom-modal custom-modal-1">
+        <div class="close-modal">
+            <svg width="15" height="15">
+                <use xlink:href="#close-modal-icon"></use>
+            </svg>
+        </div>
+        <div class="custom-modal-header">
+            Скачать WalletNOW v1.23
+        </div>
+        <div class="custom-modal-body">
+            <div class="row">
+                <div class="col-lg-8">
+                    <input type="checkbox"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    <input type="checkbox"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                </div>
+                <div class="col-lg-2">
+                    <img class="popup1" src="icons/popup1.svg" alt="pop">
+                </div>
+            </div>
+            <div class="custom-modal-footer">
+                <div class="cmf11">
+                    <div class="cmf1"><a href="#">Terms of service</a></div>
+                    <div class="cmf1 cm"><a href="#">Licence view</a></div>
+                </div>
+                <button class="custom-modal1-button">download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-modal custom-modal-2">
+        <div class="close-modal">
+            <svg width="15" height="15">
+                <use xlink:href="#close-modal-icon"></use>
+            </svg>
+        </div>
+        <div class="custom-modal-header1">
+            <div class="row">
+                <div class="col-lg-8">Окей! Вы хотите сделать свой кастомный продукт вместе с нами. <br>
+                    <span class="custom-modal_descr">Мы готовы, но нам надо с вами связаться и обсудить детали проекта.
+                        Оставьте свои данные ниже и наш менеджер свяжеться с вами в течении 1-2 дней</span>
+                </div>
+                <div class="col-lg-2 pop2_img">
+                    <img src="icons/popup1.svg" alt="pop">
+                </div>
+            </div>
+        </div>
+        <div class="custom-modal-body cmb2">
+            <form action="#">
+                <input class="cmb2i" type="text" placeholder="Name" required>
+                <input class="cmb2i" type="text" placeholder="Email" required>
+                <input class="cmb2i2" type="text" placeholder="Email" required>
+                <button class="cmb2_button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="custom-modal custom-modal-3">
+        <div class="close-modal">
+            <svg width="15" height="15">
+                <use xlink:href="#close-modal-icon"></use>
+            </svg>
+        </div>
+        <div class="custom-modal-header">Отлично!</div>
+        <div class="custom-modal-body3">
+            <div class="row">
+                <div class="col-lg-8 cmb3">Вы подписались  на рашу рассылку. 
+                    на почту мы вам отправили письмо , проверьте чтобы наши письма не попадали в spam.</div>
+                <div class="col-lg-2 pop2_img">
+                    <img src="icons/popup1.svg" alt="pop">
+                </div>
+            </div>
+            <button class="cmb3b">Close</button>
+        </div>
+    </div>
+
+    <div class="modal-mask"></div>
+
+    <section class="decision" id="decision">
+        <div class="decision__line"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 offset-lg-1 col-md-4 offset-md-1 decision__save">Secure solution for your digital
+                    money</div>
+            </div>
+            <div class="decision__wrapper">
+                <div class="decision__wrapper_left">
+                    <div class="row">
+                        <div class="col-lg-12 offset-lg-0">
+                            <h1 class="animate__animated animate__fadeInDown wow">Готовое решение кошельков для
+                                криптовалют</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 offset-lg-1"><button
+                                class="decision__left_btn animate__animated animate__fadeInUp wow open-modal-2"><img
+                                    src="icons/github.png" alt="github"><span class="decision__left_btn-span">Get a free
+                                    wallet</span></button></div>
+                    </div>
+                    <div class="offset-lg-1 decision__left_linedown">
+                        <div class="arrow arrow-bottom"></div>
+                    </div>
+                    <!--Стрелка-->
+                    
+                </div>
+                <div class="decision__wrapper_right col-lg-6">
+                    <img class="decision__right_img animate__animated animate__fadeInRight wow" src="icons/x.png"
+                        alt="phone">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secure" id="features">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Open Source Secure solution for your digital money</h2>
+            </div>
+            <div class="row secure-row">
+                <div class="col-lg-5 offset-lg-1 secure-col">
+                    <div class="secure-item animate__animated animate__backInLeft wow">
+                        <div class="secure-item_img"><img src="icons/save.svg" alt="save"></div>
+                        <div class="secure-item_subtitle">Безопасный</div>
+                        <div class="secure-item_descr">Секретный ключ хранится только локально и защищен с помощью
+                            системы безопасности</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 secure-col">
+                    <div class="secure-item2n animate__animated animate__backInRight wow">
+                        <div class="offset-lg-7 secure-item_img"><img src="icons/Wallet.svg" alt="save"></div>
+                        <div class="secure-item_subtitle">Мультивалютный</div>
+                        <div class="secure-item_descr">Поддержка ведущих криптовалют таких как BTC, ETH, LTC и много
+                            других</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 secure-col" id="mt3_sec">
+                    <div class="secure-item animate__animated animate__backInLeft wow">
+                        <div class="secure-item_img"><img src="icons/anon.svg" alt="anonymous"></div>
+                        <div class="secure-item_subtitle">Анонимность</div>
+                        <div class="secure-item_descr">Сохранение Ваших персональных данных в тайне</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 secure-col">
+                    <div class="secure-item2n animate__animated animate__backInRight wow">
+                        <div class="offset-lg-7 secure-item_img"><img src="icons/change.svg" alt="anonymous"></div>
+                        <div class="secure-item_subtitle">Обмен без границ</div>
+                        <div class="secure-item_descr">Возможность обменивать существующие криптовалюты между собою
+                            прямо в кошельке без необходимости дополнительных переводов на биржу и уплаты комиссий</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tutorial" id="tutorial">
+        <h2 class="title title__mini" id="minit">Tutorial Video</h2>
+        <div class="tutorial__descr">Мы сделали это приложение для вас. И Если у вас возникли трудности с нашим
+            продуктом посмотрите видео с мануалом установки и работы продукта</div>
+        <div class="tutorial__mac">
+            <img src="icons/laptop.png" alt="laptop">
+        </div>
+        <div class="tutorial__phone">
+            <img src="icons/phone.png" alt="phone">
+        </div>
+        <div class="tutorial__play animate__animated wow animate__rollIn">
+            <a href="https://www.youtube.com/watch?v=edK6eYdLSOU"><img src="icons/play.png" alt="play"></a>
+        </div>
+    </section>
+    <section class="views" id="views">
+        <h2 class="title">Views of our product</h2>
+        <!--Создаю табы-->
+        <div class="tabs">
+
+            <ul class="tabs__caption">
+                <li class="active" id="dek_t">Desktop</li>
+                <li id="mob_t">Mobile</li>
+            </ul>
+
+            <div class="tabs__content active">
+                <div class="views__inner">
+                    <div class="views__test"><img src="icons/slider/mac/Img_1.png" alt="mac"></div>
+                    <div class="views__test"><img src="icons/slider/mac/Img_2.png" alt="mac"></div>
+                    <div class="views__test"><img src="icons/slider/mac/Img_3.png" alt="mac"></div>
+                    <div class="views__test"><img src="icons/slider/mac/img_4.png" alt="mac"></div>
+                    <div class="views__test"><img src="icons/slider/mac/Img_6.png" alt="mac"></div>
+                    <div class="views__test"><img src="icons/slider/mac/Img_7.png" alt="mac"></div>
+                    <div class="views__test"><img src="icons/slider/mac/Img_8.png" alt="mac"></div>
+                </div>
+                <!--slider-->
+            </div>
+
+            <div class="tabs__content">
+                <div class="views__inner_phone">
+                    <div class="views__test"><img src="icons/slider/phone/CONTACT_1.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/CONTACT_3.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/convert_2.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/dash_1.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/dash_4.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/fiat.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/fiat_2.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/history.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/recieve.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/send_1.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/sett_4.png" alt="phone"></div>
+                    <div class="views__test"><img src="icons/slider/phone/support_3.png" alt="phone"></div>
+                </div>
+                <!--slider2-->
+            </div>
+
+        </div><!-- .tabs-->
+    </section>
+    <section class="start" id="get_started">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Get started</h2>
+            </div>
+            <div class="row start__items">
+                <img class="start__line animate__animated animate__fadeInLeftBig wow" src="icons/line.svg" alt="line">
+                <div class="col-lg-3 offset-lg-1 start__item">
+                    <img src="icons/github_started.svg" alt="github">
+                    <div class="start__descr">Скачайте последнюю версию нашего продукта с GitHub</div>
+                    <div class="start__circle1 animate__animated animate__fadeInLeftBig wow"></div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 start__item">
+                    <img src="icons/create.svg" alt="create">
+                    <div class="start__descr" id="mbnsd">Установите и разверните на своем сервере наш продукт.</div>
+                    <div class="start__circle1 animate__animated animate__fadeInLeftBig wow"></div>
+                    <a class="start__link" download href="https://lh3.googleusercontent.com/proxy/qw4J36wmCmN0qkFaWQK9KVrP5N3FQlXtqo-dlom_BYPED5Sxy-jz3l4Y3u-pXeV8siq4PCFDAhUyAGolgS2pi_CZfPxf0iLySd0W-0Qvfh6VoVIExbt_NLmQ4MUCnxAruD2S7UP4Nhwe">Скачать Инструкцию</a>
+                    <!--Не скачивается--><!--Не скачивается--><!--Не скачивается--><!--Не скачивается-->
+                </div>
+                <div class="col-lg-3 offset-lg-1 start__item">
+                    <img src="icons/unicorn.svg" alt="github">
+                    <div class="start__descr">Кастомизируйте и запускайте готовое решение для своего бизнеса</div>
+                    <div class="start__circle1 animate__animated animate__fadeInLeftBig wow"></div>
+                </div>
+            </div>
+            <button class="start__button open-modal-2"><img src="icons/git.svg" alt="github"><span>Get a free wallet</span></button>
+        </div>
+    </section>
+    <section class="minimal" id="config">
+        <div class="container">
+            <h2 class="title">Минимальные требования для запуска сервиса</h2>
+            <img class="minimal_pos" src="icons/wallet.svg" alt="wallet">
+            <div class="row minimal__row justify-content-center">
+                <div class="col-lg-2 minimal__item_title minimal__pos test_m1">System</div>
+                <div class="col-lg-7 minimal__item_subtitle">MacOS 10.11.6 и выше, Ubuntu 18 и выше, Debian 10.3 и
+                    выше<br><span>при условии поддержки блиотеки libzmq4</span></div>
+            </div>
+            <div class="row justify-content-center min_fc">
+                <div class="col-lg-2 minimal__item_title test_m2">Language</div>
+                <div class="col-lg-7 minimal__item_subtitle">Go (Golang)<br><span>компилируемый многопоточный язык
+                        программирования</span></div>
+            </div>
+            <div class="row justify-content-center min_fc">
+                <div class="col-lg-2 minimal__item_title test_m3">Library</div>
+                <div class="col-lg-7 minimal__item_subtitle">Предустановлена библиотека libzmq4</div>
+            </div>
+            <div class="row justify-content-center min_fc">
+                <div class="col-lg-2 minimal__item_title test_m4">Ядро</div>
+                <div class="col-lg-7 minimal__item_subtitle">Предустановленно и сконфигурировано ядро Биткоина (Bitcoin
+                    Core) версии 0.19.1</div>
+            </div>
+            <div class="row justify-content-center min_fc">
+                <div class="col-lg-2 minimal__item_title test_m5">RAM</div>
+                <div class="col-lg-7 minimal__item_subtitle">Оперативная память объемом 8 Гб<br><span>(рекомендовано
+                        16ГБ)</span></div>
+            </div>
+            <div class="row justify-content-center min_fc">
+                <div class="col-lg-2 minimal__item_title test_m6">Processor</div>
+                <div class="col-lg-7 minimal__item_subtitle">Двухъядерный 2,5 GHz Intel Core i5<br><span>рекомендовано
+                        четырехъядерный 3,2 GHz Intel Core i7</span></div>
+            </div>
+            <div class="row justify-content-center min_fc">
+                <div class="col-lg-2 minimal__item_title test_m7">Storage</div>
+                <div class="col-lg-7 minimal__item_subtitle">100+ Гб для сервиса Wallets и хранения истории , 1 Тб для
+                    хранения данных блокчейна</div>
+            </div>
+        </div>
+    </section>
+    <section class="license" id="licence">
+        <div class="container license__img">
+            <img src="icons/licence.svg" alt="licence">
+            <h2 class="title title__minil" id="minil">Лицензия</h2>
+            <div class="license__descr">Этот продукт имеет лицензионное соглашение GPL V30.<br>
+                Более подробно вы можете ознакомится <a href="#">здесь</a></div>
+        </div>
+    </section>
+    <section class="custom" id="custom">
+        <div class="container">
+            <h2 class="title">Закажите кастомную разработку своего продукта</h2>
+            <div class="row">
+                <div class="col-lg-6 custom__left">
+                    <h2 class="title title__minic" id="minic">Мы можем вам помочь</h2>
+                    <div class="custom__descr">Если вы хотите не просто развернуть свой криптокошелек при помощи нашего
+                        open source продукта, а решили сделать или доработать свой продукт для другими функциями, наша
+                        fullstack команда разработчиков готова вам в этом помочь. </div>
+                    <button class="open-modal-2 custom__button">Connect us</button>
+                </div>
+                <div class="col-lg-5 custom__right">
+                    <img src="img/customMac.png" alt="mac">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="connect" id="connect">
+        <div class="container">
+            <div class="row connect__row">
+                <img class="connect__img" src="icons/gold.svg" alt="gold">
+                <div class="col-lg-7">
+                    <h2 class="title title__minico" id="minico">Оставайтесь на связи</h2>
+                    <div class="connect__descr">
+                        Мы постоянно дорабатываем и обновляем наш продукт криптокошельков. Подпишитесь на обновления
+                        нашего продукта.
+                        Обещаем не спамить и присылать только актуальную информацию</div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 connect__form">
+                    <form action="#">
+                        <input required class="connect__input" type="text" name="email" placeholder="Your@email.com">
+                        <button class="connect__button open-modal-3">subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#header"><img src="icons/logo_footer.svg" alt="wallet"></a>
+                    <div class="footer__copyright">© 2020 Wallet NOW. All rights reserved.</div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 offset-lg-3 footer__list-left">
+                    <ul>
+                        <li><a href="#decision">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#tutorial">Video tutorial</a></li>
+                        <li><a href="#get_started">Get started</a></li>
+                        <li><a href="#config">Configurations</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 footer__list-left">
+                    <ul>
+                        <li><a href="#">Custom Order</a></li>
+                        <li><a href="#">Subscribe Now</a></li>
+                        <li><a href="#licence">Licence</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li class="footer__social"><a class="footer__link_fb" href="https://www.facebook.com/"><img
+                                    src="icons/footer/Facebook.svg" alt="fb"></a><a class="footer__link_git"
+                                href="https://github.com/"><img class="footer__so" src="icons/footer/github.svg" alt="git"></a><a
+                                class="footer__link_email" href="https://www.ukr.net/"><img class="footer__so" src="icons/footer/Mail.svg"
+                                    alt="mail"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
